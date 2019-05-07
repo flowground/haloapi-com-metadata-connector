@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": {
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "Accept_Language": {
+            "type": "string",
+            "default": "en"
+        }
+    }
+}

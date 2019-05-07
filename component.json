@@ -1,0 +1,671 @@
+{
+    "title": "Metadata",
+    "description": "API that provides Metadata information.",
+    "docsUrl": "",
+    "url": "https://api.apis.guru/v2/specs/haloapi.com/metadata/1.0/swagger.json",
+    "envVars": {},
+    "credentials": {
+        "fields": {
+            "server": {
+                "label": "Server",
+                "viewClass": "SelectView",
+                "model": [
+                    "https://www.haloapi.com/metadata",
+                    "--- Custom URL"
+                ],
+                "required": true
+            },
+            "otherServer": {
+                "label": "Custom Server URL",
+                "viewClass": "TextFieldView"
+            },
+            "apiKeyHeader": {
+                "label": "Ocp-Apim-Subscription-Key (apiKeyHeader)",
+                "viewClass": "TextFieldView"
+            },
+            "apiKeyQuery": {
+                "label": "subscription-key (apiKeyQuery)",
+                "viewClass": "TextFieldView"
+            }
+        }
+    },
+    "triggers": {
+        "startFlow": {
+            "main": "./lib/triggers/startFlow.js",
+            "type": "polling",
+            "title": "Start Flow",
+            "fields": {}
+        }
+    },
+    "actions": {
+        "Halo_5_Campaign_Missions": {
+            "main": "./lib/actions/Halo_5_Campaign_Missions.js",
+            "title": "Halo 5 - Campaign Missions",
+            "description": "<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 21, 2017:</strong></p>\n    <ul>\n        <li>Renamed Endpoint from \"Campaign Missions\" to \"Halo 5 - Campaign Missions\".</li>\n        <li>Removed \"{title}\" Request Parameter.</li>\n        <li>Documented \"Accept-Language\" Request Header.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Halo_5_Campaign_Missions.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Halo_5_Commendations": {
+            "main": "./lib/actions/Halo_5_Commendations.js",
+            "title": "Halo 5 - Commendations",
+            "description": "<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 21, 2017:</strong></p>\n    <ul>\n        <li>Renamed Endpoint from \"Commendations\" to \"Halo 5 - Commendations\".</li>\n        <li>Removed \"{title}\" Request Parameter.</li>\n        <li>Documented \"Accept-Language\" Request Header.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Halo_5_Commendations.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Halo_5_Company_Commendations": {
+            "main": "./lib/actions/Halo_5_Company_Commendations.js",
+            "title": "Halo 5 - Company Commendations",
+            "description": "<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>August 15, 2018:</strong></p>\n    <ul>\n        <li>Added Endpoint.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Halo_5_Company_Commendations.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Halo_5_CSR_Designations": {
+            "main": "./lib/actions/Halo_5_CSR_Designations.js",
+            "title": "Halo 5 - CSR Designations",
+            "description": "<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 21, 2017:</strong></p>\n    <ul>\n        <li>Renamed Endpoint from \"CSR Designations\" to \"Halo 5 - CSR Designations\".</li>\n        <li>Removed \"{title}\" Request Parameter.</li>\n        <li>Documented \"Accept-Language\" Request Header.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Halo_5_CSR_Designations.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Halo_5_Enemies": {
+            "main": "./lib/actions/Halo_5_Enemies.js",
+            "title": "Halo 5 - Enemies",
+            "description": "<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 21, 2017:</strong></p>\n    <ul>\n        <li>Renamed Endpoint from \"Enemies\" to \"Halo 5 - Enemies\".</li>\n        <li>Removed \"{title}\" Request Parameter.</li>\n        <li>Documented \"Accept-Language\" Request Header.</li>\n    </ul>\n</div>\n<div class=\"panel-body\">\n    <p><strong>April 20, 2016:</strong></p>\n    <ul>\n        <li>Corrected documentation typo. The field \"largeIconImageUrl\" was incorrectly named \"lageIconImageUrl\".</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Halo_5_Enemies.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Halo_5_Flexible_Stats": {
+            "main": "./lib/actions/Halo_5_Flexible_Stats.js",
+            "title": "Halo 5 - Flexible Stats",
+            "description": "<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 21, 2017:</strong></p>\n    <ul>\n        <li>Renamed Endpoint from \"Flexible Stats\" to \"Halo 5 - Flexible Stats\".</li>\n        <li>Removed \"{title}\" Request Parameter.</li>\n        <li>Documented \"Accept-Language\" Request Header.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Halo_5_Flexible_Stats.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Halo_5_Game_Base_Variants": {
+            "main": "./lib/actions/Halo_5_Game_Base_Variants.js",
+            "title": "Halo 5 - Game Base Variants",
+            "description": "<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 21, 2017:</strong></p>\n    <ul>\n        <li>Renamed Endpoint from \"Game Base Variants\" to \"Halo 5 - Game Base Variants\".</li>\n        <li>Removed \"{title}\" Request Parameter.</li>\n        <li>Documented \"Accept-Language\" Request Header.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Halo_5_Game_Base_Variants.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Halo_5_Game_Variant": {
+            "main": "./lib/actions/Halo_5_Game_Variant.js",
+            "title": "Halo 5 - Game Variant",
+            "description": "<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 21, 2017:</strong></p>\n    <ul>\n        <li>Renamed Endpoint from \"Game Variants\" to \"Halo 5 - Game Variant\".</li>\n        <li>Removed \"{title}\" Request Parameter.</li>\n        <li>Documented \"Accept-Language\" Request Header.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Halo_5_Game_Variant.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Halo_5_Impulses": {
+            "main": "./lib/actions/Halo_5_Impulses.js",
+            "title": "Halo 5 - Impulses",
+            "description": "<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 21, 2017:</strong></p>\n    <ul>\n        <li>Renamed Endpoint from \"Impulses\" to \"Halo 5 - Impulses\".</li>\n        <li>Removed \"{title}\" Request Parameter.</li>\n        <li>Documented \"Accept-Language\" Request Header.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Halo_5_Impulses.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Halo_5_Map_Variant": {
+            "main": "./lib/actions/Halo_5_Map_Variant.js",
+            "title": "Halo 5 - Map Variant",
+            "description": "<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 21, 2017:</strong></p>\n    <ul>\n        <li>Renamed Endpoint from \"Map Variants\" to \"Halo 5 - Map Variant\".</li>\n        <li>Removed \"{title}\" Request Parameter.</li>\n        <li>Documented \"Accept-Language\" Request Header.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Halo_5_Map_Variant.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Halo_5_Maps": {
+            "main": "./lib/actions/Halo_5_Maps.js",
+            "title": "Halo 5 - Maps",
+            "description": "<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 21, 2017:</strong></p>\n    <ul>\n        <li>Renamed Endpoint from \"Maps\" to \"Halo 5 - Maps\".</li>\n        <li>Removed \"{title}\" Request Parameter.</li>\n        <li>Documented \"Accept-Language\" Request Header.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Halo_5_Maps.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Halo_5_Medals": {
+            "main": "./lib/actions/Halo_5_Medals.js",
+            "title": "Halo 5 - Medals",
+            "description": "<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 21, 2017:</strong></p>\n    <ul>\n        <li>Renamed Endpoint from \"Medals\" to \"Halo 5 - Medals\".</li>\n        <li>Removed \"{title}\" Request Parameter.</li>\n        <li>Documented \"Accept-Language\" Request Header.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Halo_5_Medals.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Halo_5_Playlists": {
+            "main": "./lib/actions/Halo_5_Playlists.js",
+            "title": "Halo 5 - Playlists",
+            "description": "<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 21, 2017:</strong></p>\n    <ul>\n        <li>Renamed Endpoint from \"Playlists\" to \"Halo 5 - Playlists\".</li>\n        <li>Removed \"{title}\" Request Parameter.</li>\n        <li>Documented \"Accept-Language\" Request Header.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Halo_5_Playlists.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Halo_5_Requisition_Pack": {
+            "main": "./lib/actions/Halo_5_Requisition_Pack.js",
+            "title": "Halo 5 - Requisition Pack",
+            "description": "<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 21, 2017:</strong></p>\n    <ul>\n        <li>Renamed Endpoint from \"Requisition Packs\" to \"Halo 5 - Requisition Pack\".</li>\n        <li>Removed \"{title}\" Request Parameter.</li>\n        <li>Documented \"Accept-Language\" Request Header.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Halo_5_Requisition_Pack.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Halo_5_Requisition": {
+            "main": "./lib/actions/Halo_5_Requisition.js",
+            "title": "Halo 5 - Requisition",
+            "description": "<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 21, 2017:</strong></p>\n    <ul>\n        <li>Renamed Endpoint from \"Requisitions\" to \"Halo 5 - Requisition\".</li>\n        <li>Removed \"{title}\" Request Parameter.</li>\n        <li>Documented \"Accept-Language\" Request Header.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Halo_5_Requisition.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Halo_5_Seasons": {
+            "main": "./lib/actions/Halo_5_Seasons.js",
+            "title": "Halo 5 - Seasons",
+            "description": "<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 21, 2017:</strong></p>\n    <ul>\n        <li>Renamed Endpoint from \"Seasons\" to \"Halo 5 - Seasons\".</li>\n        <li>Removed \"{title}\" Request Parameter.</li>\n        <li>Documented \"Accept-Language\" Request Header.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Halo_5_Seasons.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Halo_5_Skulls": {
+            "main": "./lib/actions/Halo_5_Skulls.js",
+            "title": "Halo 5 - Skulls",
+            "description": "<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 21, 2017:</strong></p>\n    <ul>\n        <li>Renamed Endpoint from \"Skulls\" to \"Halo 5 - Skulls\".</li>\n        <li>Removed \"{title}\" Request Parameter.</li>\n        <li>Documented \"Accept-Language\" Request Header.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Halo_5_Skulls.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Halo_5_Spartan_Ranks": {
+            "main": "./lib/actions/Halo_5_Spartan_Ranks.js",
+            "title": "Halo 5 - Spartan Ranks",
+            "description": "<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 21, 2017:</strong></p>\n    <ul>\n        <li>Renamed Endpoint from \"Spartan Ranks\" to \"Halo 5 - Spartan Ranks\".</li>\n        <li>Removed \"{title}\" Request Parameter.</li>\n        <li>Documented \"Accept-Language\" Request Header.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Halo_5_Spartan_Ranks.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Halo_5_Team_Colors": {
+            "main": "./lib/actions/Halo_5_Team_Colors.js",
+            "title": "Halo 5 - Team Colors",
+            "description": "<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 21, 2017:</strong></p>\n    <ul>\n        <li>Renamed Endpoint from \"Team Colors\" to \"Halo 5 - Team Colors\".</li>\n        <li>Removed \"{title}\" Request Parameter.</li>\n        <li>Documented \"Accept-Language\" Request Header.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Halo_5_Team_Colors.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Halo_5_Vehicles": {
+            "main": "./lib/actions/Halo_5_Vehicles.js",
+            "title": "Halo 5 - Vehicles",
+            "description": "<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 21, 2017:</strong></p>\n    <ul>\n        <li>Renamed Endpoint from \"Vehicles\" to \"Halo 5 - Vehicles\".</li>\n        <li>Removed \"{title}\" Request Parameter.</li>\n        <li>Documented \"Accept-Language\" Request Header.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Halo_5_Vehicles.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Halo_5_Weapons": {
+            "main": "./lib/actions/Halo_5_Weapons.js",
+            "title": "Halo 5 - Weapons",
+            "description": "<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 21, 2017:</strong></p>\n    <ul>\n        <li>Renamed Endpoint from \"Weapons\" to \"Halo 5 - Weapons\".</li>\n        <li>Removed \"{title}\" Request Parameter.</li>\n        <li>Documented \"Accept-Language\" Request Header.</li>\n    </ul>\n</div>\n<div class=\"panel-body\">\n    <p><strong>April 26, 2016:</strong></p>\n    <ul>\n        <li>Corrected documentation issue. The documentation for the \"type\" field was incorrect.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Halo_5_Weapons.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Halo_Wars_2_Campaign_Levels": {
+            "main": "./lib/actions/Halo_Wars_2_Campaign_Levels.js",
+            "title": "Halo Wars 2 - Campaign Levels",
+            "description": "<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 21, 2017:</strong></p>\n    <ul>\n        <li>Added Endpoint.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Halo_Wars_2_Campaign_Levels.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Halo_Wars_2_Campaign_Logs": {
+            "main": "./lib/actions/Halo_Wars_2_Campaign_Logs.js",
+            "title": "Halo Wars 2 - Campaign Logs",
+            "description": "<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 21, 2017:</strong></p>\n    <ul>\n        <li>Added Endpoint.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Halo_Wars_2_Campaign_Logs.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Halo_Wars_2_Card_Keywords": {
+            "main": "./lib/actions/Halo_Wars_2_Card_Keywords.js",
+            "title": "Halo Wars 2 - Card Keywords",
+            "description": "<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 22, 2017:</strong></p>\n    <ul>\n        <li>Added Endpoint.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Halo_Wars_2_Card_Keywords.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Halo_Wars_2_Cards": {
+            "main": "./lib/actions/Halo_Wars_2_Cards.js",
+            "title": "Halo Wars 2 - Cards",
+            "description": "<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 21, 2017:</strong></p>\n    <ul>\n        <li>Added Endpoint.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Halo_Wars_2_Cards.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Halo_Wars_2_CSR_Designations": {
+            "main": "./lib/actions/Halo_Wars_2_CSR_Designations.js",
+            "title": "Halo Wars 2 - CSR Designations",
+            "description": "<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 22, 2017:</strong></p>\n    <ul>\n        <li>Added Endpoint.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Halo_Wars_2_CSR_Designations.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Halo_Wars_2_Difficulties": {
+            "main": "./lib/actions/Halo_Wars_2_Difficulties.js",
+            "title": "Halo Wars 2 - Difficulties",
+            "description": "<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 21, 2017:</strong></p>\n    <ul>\n        <li>Added Endpoint.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Halo_Wars_2_Difficulties.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Halo_Wars_2_Game_Object_Categories": {
+            "main": "./lib/actions/Halo_Wars_2_Game_Object_Categories.js",
+            "title": "Halo Wars 2 - Game Object Categories",
+            "description": "<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 21, 2017:</strong></p>\n    <ul>\n        <li>Added Endpoint.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Halo_Wars_2_Game_Object_Categories.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Halo_Wars_2_Game_Objects": {
+            "main": "./lib/actions/Halo_Wars_2_Game_Objects.js",
+            "title": "Halo Wars 2 - Game Objects",
+            "description": "<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 21, 2017:</strong></p>\n    <ul>\n        <li>Added Endpoint.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Halo_Wars_2_Game_Objects.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Halo_Wars_2_Leader_Powers": {
+            "main": "./lib/actions/Halo_Wars_2_Leader_Powers.js",
+            "title": "Halo Wars 2 - Leader Powers",
+            "description": "<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 21, 2017:</strong></p>\n    <ul>\n        <li>Added Endpoint.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Halo_Wars_2_Leader_Powers.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Halo_Wars_2_Leaders": {
+            "main": "./lib/actions/Halo_Wars_2_Leaders.js",
+            "title": "Halo Wars 2 - Leaders",
+            "description": "<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 21, 2017:</strong></p>\n    <ul>\n        <li>Added Endpoint.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Halo_Wars_2_Leaders.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Halo_Wars_2_Maps": {
+            "main": "./lib/actions/Halo_Wars_2_Maps.js",
+            "title": "Halo Wars 2 - Maps",
+            "description": "<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 21, 2017:</strong></p>\n    <ul>\n        <li>Added Endpoint.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Halo_Wars_2_Maps.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Halo_Wars_2_Packs": {
+            "main": "./lib/actions/Halo_Wars_2_Packs.js",
+            "title": "Halo Wars 2 - Packs",
+            "description": "<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 21, 2017:</strong></p>\n    <ul>\n        <li>Added Endpoint.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Halo_Wars_2_Packs.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Halo_Wars_2_Playlists": {
+            "main": "./lib/actions/Halo_Wars_2_Playlists.js",
+            "title": "Halo Wars 2 - Playlists",
+            "description": "<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 21, 2017:</strong></p>\n    <ul>\n        <li>Added Endpoint.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Halo_Wars_2_Playlists.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Halo_Wars_2_Seasons": {
+            "main": "./lib/actions/Halo_Wars_2_Seasons.js",
+            "title": "Halo Wars 2 - Seasons",
+            "description": "<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 21, 2017:</strong></p>\n    <ul>\n        <li>Added Endpoint.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Halo_Wars_2_Seasons.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Halo_Wars_2_Spartan_Ranks": {
+            "main": "./lib/actions/Halo_Wars_2_Spartan_Ranks.js",
+            "title": "Halo Wars 2 - Spartan Ranks",
+            "description": "<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 27, 2017:</strong></p>\n    <ul>\n        <li>Updated documentation to clarify the relationship between the Spartan Rank content item and the Spartan Rank Display Info content item.</li>\n    </ul>\n</div>\n<div class=\"panel-body\">\n    <p><strong>February 21, 2017:</strong></p>\n    <ul>\n        <li>Added Endpoint.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Halo_Wars_2_Spartan_Ranks.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "Halo_Wars_2_Techs": {
+            "main": "./lib/actions/Halo_Wars_2_Techs.js",
+            "title": "Halo Wars 2 - Techs",
+            "description": "<br />\n<h4>Changelog</h4>\n<div class=\"panel-body\">\n    <p><strong>February 21, 2017:</strong></p>\n    <ul>\n        <li>Added Endpoint.</li>\n    </ul>\n</div>\n",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/Halo_Wars_2_Techs.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        }
+    }
+}

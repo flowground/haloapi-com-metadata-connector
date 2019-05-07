@@ -1,0 +1,12 @@
+{
+    "type": "object",
+    "properties": {
+        "startAt": {
+            "type": "number"
+        },
+        "Accept_Language": {
+            "type": "string",
+            "default": "en"
+        }
+    }
+}

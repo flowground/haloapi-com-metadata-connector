@@ -1,0 +1,9 @@
+{
+    "type": "object",
+    "properties": {
+        "Accept_Language": {
+            "type": "string",
+            "default": "en"
+        }
+    }
+}
